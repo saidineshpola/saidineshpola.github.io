@@ -3,7 +3,7 @@ Academic Portfolio
 
 You can find the LIVE Website [here](https://saidineshpola.github.io).
 
-This template has been made from scratch taking in consideration some details from Beautiful Jekyll templates by nicolas.
+This template has been made from Beautiful Jekyll templates by [nicolas](https://github.com/NicolasMeseguer/nicolasmeseguer.github.io).
 
 Reach me @ [saidines12@gmail.com](saidines12@gmail.com).
 
