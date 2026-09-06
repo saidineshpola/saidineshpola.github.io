@@ -11,6 +11,7 @@ $('#nameContent').hide();
 */
 $('#theme').hide();
 $('#lan').hide();
+$('#chase').hide();
 
 $(document).ready(function(){
 
@@ -47,7 +48,7 @@ $(document).ready(function(){
 			rel: 'stylesheet',
 			href: 'assets/css/dark.css'
 		});
-		$('#theme').empty().append("<i class='fa-duotone fa-lightbulb-slash'></i>");
+		$('#theme').empty().append("<i class='fa-solid fa-sun'></i>");
 	}
 	// Done because light is the one by default
 	if(localStorage.lan == "es") {
@@ -249,19 +250,31 @@ $(document).ready(function(){
 			$(e.currentTarget).addClass('active');
 			$('#theme').show("fast");
 			$('#lan').show("fast");
+			$('#chase').show("fast");
 		}
 		else {
 			$(e.currentTarget).removeClass('active');
 			$('#theme').hide("fast");
 			$('#lan').hide("fast");
+			$('#chase').hide("fast");
 		}
+	})
+
+	// Toggles the cursor chase
+	$('#chase').on('click keydown', function(e) {
+		if (e.type == "keydown" && e.key != "Enter" && e.key != " ")
+			return;
+
+		e.preventDefault();
+		if (window.CursorChase)
+			window.CursorChase.toggle();
 	})
 
 	// Animates the theme button + functionality
 	$('#theme').click(function(e) {
 		if(localStorage.theme != "dark"){
 
-			$('#theme').empty().append("<i class='fa-duotone fa-lightbulb-slash'></i>");
+			$('#theme').empty().append("<i class='fa-solid fa-sun'></i>");
 
 			localStorage.theme = "dark"
 			
@@ -274,7 +287,7 @@ $(document).ready(function(){
 		}
 		else {
 
-			$('#theme').empty().append("<i class='fa-duotone fa-lightbulb'></i>");
+			$('#theme').empty().append("<i class='fa-solid fa-moon'></i>");
 
 			localStorage.theme = "light"
 			

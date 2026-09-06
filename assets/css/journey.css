@@ -30,6 +30,80 @@
 	stroke-dasharray: 4 5;
 }
 
+/* The move that leaves the drawn chain: same graph, weaker line. */
+.jg-edge--alt {
+	stroke-width: 1.5;
+	opacity: 0.75;
+}
+
+.jg-edge.is-path {
+	stroke: var(--jg-accent);
+	stroke-width: 3;
+	opacity: 1;
+}
+
+.jg-edge.is-dim {
+	opacity: 0.25;
+}
+
+/* Dijkstra overlay */
+.jg-dist-bg {
+	fill: var(--jg-accent);
+}
+
+.jg-dist {
+	fill: var(--bg-color);
+	font-size: 10px;
+	font-weight: 600;
+	text-anchor: middle;
+}
+
+.jg-runner {
+	fill: var(--jg-accent);
+	stroke: var(--bg-color);
+	stroke-width: 2;
+}
+
+.jg-node.is-settled .jg-disc {
+	stroke: var(--jg-accent);
+	stroke-width: 2.5;
+}
+
+.jg-controls {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 10px;
+	margin-bottom: 1.1em;
+}
+
+.jg-run {
+	border: 1px solid var(--jg-line);
+	border-radius: 100px;
+	padding: 5px 14px;
+	font-size: 12.5px;
+	font-weight: 500;
+	color: var(--jg-tag-color);
+	background-color: var(--jg-tag-bg);
+	cursor: pointer;
+	transition: 0.2s;
+}
+
+.jg-run:hover:enabled {
+	border-color: var(--jg-accent);
+}
+
+.jg-run:disabled {
+	opacity: 0.55;
+	cursor: default;
+}
+
+.jg-result {
+	font-size: 12px;
+	font-weight: 300;
+	color: var(--jg-muted);
+}
+
 .jg-chip-bg {
 	fill: var(--bg-color);
 }

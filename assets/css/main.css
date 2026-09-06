@@ -186,10 +186,47 @@ li > .active {
     transition: background-color .5s; /* For modern browsers */
 }
 
+#chase {
+	height: 40px;
+    width: 40px;
+
+	bottom: 175px;
+	right: 30px;
+
+	font-size: 1em;
+
+	-webkit-transition: background-color .5s; /* For Safari 3.0 to 6.0 */
+    transition: background-color .5s; /* For modern browsers */
+}
+
+#chase.off {
+	opacity: 0.45;
+}
+
 .lang-flag {
 	height: 15px;
     width: 22.5px;
 	vertical-align:	0px;
+}
+
+/* CURSOR CHASE */
+.chase-sprite {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9998;
+
+	line-height: 1;
+	pointer-events: none;
+	user-select: none;
+
+	opacity: 0;
+	transition: opacity .4s;
+	will-change: transform;
+}
+
+.chase-sprite.is-awake {
+	opacity: 1;
 }
 
 /* BLOG - Related */
