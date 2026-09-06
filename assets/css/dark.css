@@ -4,6 +4,13 @@
 
 	--bg-color: #383838;
 	--nv-color: #121212;
+
+	/* Career graph */
+	--jg-line: #5e5e5e;
+	--jg-accent: #0dcaf0;
+	--jg-muted: #a8b0b8;
+	--jg-tag-bg: rgba(13, 202, 240, 0.14);
+	--jg-tag-color: #0dcaf0;
 }
 
 body {

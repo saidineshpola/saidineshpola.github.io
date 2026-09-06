@@ -2,6 +2,13 @@
 	--t-color: #000;
 
 	--bg-color: #fff;
+
+	/* Career graph */
+	--jg-line: #d0d5d4;
+	--jg-accent: #22517d;
+	--jg-muted: #717378;
+	--jg-tag-bg: rgba(34, 81, 125, 0.09);
+	--jg-tag-color: #22517d;
 }
 
 body {
