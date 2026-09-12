@@ -5,7 +5,7 @@ You can find the LIVE Website [here](https://saidineshpola.github.io).
 
 This template has been made from Beautiful Jekyll templates by [nicolas](https://github.com/NicolasMeseguer/nicolasmeseguer.github.io).
 
-Reach me @ [saidines12@gmail.com](mailto:saidines12@gmail.com).
+Reach me @ [pola.saidinesh@gmail.com](mailto:pola.saidinesh@gmail.com).
 
 License
 -------
